@@ -1,5 +1,133 @@
 * {
-    margin: 45;
-    padding: 45;
+    margin: 0;
+    padding: 0;
     font-family: "Love Ya Like A Sister", cursive;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: white;
+    background: #1d1b1f;
+}
+/*--------------------------
+1. Navegacion FIja
+----------------------------*/
+header nav{
+    top: 0;
+    width: 100%;
+    background: #3f3742;
+    padding: 15px;
+    z-index: 1000;
+    position: fixed;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+header nav ul li a{
+    color: #9295aa;
+    font-size: 25px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: #e448a8;
+}
+/*--------------------------
+2. Seccion Inicio
+----------------------------*/
+.hero{
+    height: 100vh; /* que acapare el 100% de la pantalla*/
+    display: flex; /*activando el display flex*/
+    flex-direction: column; /*organiza elementos en columna de arriba a abajao*/
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1d1b1f, #33262c, #553052);
+}
+.hero-contenido{
+    max-width: 800px; /*asingna un ancho maximo*/
+    text-align: center; /*centra todos los textos del contenedor*/
+    margin: 0 auto;
+}
+.hero-titulo{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.hero-subtitulo{
+    color: #b1e2ee;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.hero-descripcion{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+.hero-slogan{
+    font-size: 1rem;
+    font-style: oblique;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+.hero-foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px, solid #9295aa;
+    margin-bottom: 20px;
+}
+.hero-estadisticas{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.estadis-item{
+    text-align: center;
+}
+.estadis-numero{
+    display: block;
+    font-size: 2rem;
+    font-weight: 570;
+    color: #b1e2ee;
+    margin-bottom: 5px;
+}
+.estadis-nombre{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.hero-botones{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.btn-whatsapp, .btn-linkedin, .btn-cv{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid;
+}
+.btn-whatsapp{
+    border-color: #25D366;
+    color: #25D366;
+}
+.btn-linkedin{
+    border-color: #0077b5;
+    color: #0077b5;
+}
+.btn-cv{
+    border-color: #a537ff;
+    color: #8c23e2;
 }
