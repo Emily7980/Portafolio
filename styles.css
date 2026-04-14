@@ -121,13 +121,79 @@ header nav ul li a:hover{
 }
 .btn-whatsapp{
     border-color: #25D366;
-    color: #25D366;
+    color: #cadfd2;
 }
 .btn-linkedin{
     border-color: #0077b5;
-    color: #0077b5;
+    color: #d8e3e9;
 }
 .btn-cv{
     border-color: #a537ff;
-    color: #8c23e2;
+    color: #d7cce0;
+}
+.hero-name{
+    background: linear-gradient(135deg,#d4e9ee,#b7a8c0,#f8e2f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.hero-name:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+/*--------------------------
+3. Sobre mi
+----------------------------*/
+.sobre{
+    text-align: center;
+}
+.sobre p{
+    max-width: 800px;
+    line-height: 1.8;
+    margin: 0 auto 15px auto;
+}
+.sobre h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #9295aa;
+}
+/*--------------------------
+3. Mis tegnologias
+----------------------------*/
+.tecno{
+    background: #1d1b1f;
+}
+.tecno h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #9295aa;
+}
+.tecno-card{
+    padding: 25px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255, 0.09);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.card-titulo{
+    color: #b1e2ee;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-descrip{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tecno-tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
