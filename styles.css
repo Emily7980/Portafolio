@@ -32,9 +32,11 @@ header nav ul li a{
     color: #9295aa;
     font-size: 25px;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 header nav ul li a:hover{
-    color: #e448a8;
+    color: #91578c;
+    transition: 0.3s ease-in-out;
 }
 /*--------------------------
 2. Seccion Inicio
@@ -120,16 +122,16 @@ header nav ul li a:hover{
     border: 1px solid;
 }
 .btn-whatsapp{
-    border-color: #25D366;
-    color: #cadfd2;
+    border-color: #6e406a;
+    color: white;
 }
 .btn-linkedin{
-    border-color: #0077b5;
-    color: #d8e3e9;
+    border-color: #6e406a;
+    color: white;
 }
 .btn-cv{
-    border-color: #a537ff;
-    color: #d7cce0;
+    border-color: #6e406a;
+    color: white;
 }
 .hero-name{
     background: linear-gradient(135deg,#d4e9ee,#b7a8c0,#f8e2f6);
@@ -178,6 +180,12 @@ header nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+.tecno-card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    background-color: #382d36;
 }
 .card-titulo{
     color: #b1e2ee;
@@ -197,3 +205,130 @@ header nav ul li a:hover{
     max-width: 1000px;
     margin: 0 auto;
 }
+/*--------------------------
+4. Mis Proyectos
+----------------------------*/
+.proyectos{
+    text-align: center;
+}
+.proyectos h2{
+    margin-bottom: 25px;
+    color: #9295aa;
+}
+.proyectos-card{
+    background-color: rgb(255, 255, 255, 0.09);
+    padding: 30px;
+    border-radius: 15px;
+    padding-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid #4b3649;
+    margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+}
+.proyecto-titulo{
+    font-size: 20px;
+    color: #b1e2ee;
+    margin-bottom: 10px;
+}
+.proyecto-descripcion{
+  font-style: oblique;
+  margin-bottom: 10px;  
+}
+.proyectos-card:hover{
+    background-color: #382d36;
+    transform: scale(1.1) rotate(-1deg);
+    transition: 0.3s ease-in-out;
+}
+/*--------------------------
+5. Contactos
+----------------------------*/
+.contacto{
+    text-align: center;
+}
+.contacto h2{
+    margin-bottom: 25px;
+    color: #9295aa;
+}
+.contacto form{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+.contacto input, textarea{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+.contacto button{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #3f3742;
+    color: #b1e2ee;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.contacto button:hover{
+    background: #553052;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.contacto button:active{
+    background: #9295aa;
+    transform: scale(0.98);
+}
+/*--------------------------
+6. Footer
+----------------------------*/
+.footer{
+    text-align: center;
+}
+.footer h2{
+    margin: 25px 0;
+    color: #9295aa;
+}
+.contacto-info{
+    margin-bottom: 25px;
+}
+.contacto-info h3{
+    color: #b1e2ee;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.contacto-social nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+.contacto-social h3{
+    color: #b1e2ee;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+.contacto-social nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #9295aa;
+    border-radius: 5px;
+}
+.copyright{
+    margin-top: 30px;
+    color: #6e406a;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+/*
+background-color: #676269; color: #e448a8
