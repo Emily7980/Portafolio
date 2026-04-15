@@ -281,6 +281,7 @@ header nav ul li a:hover{
     background: #553052;
     color: white;
     transition: 0.3s ease-in-out;
+    transform: scale(1.01);
 }
 .contacto button:active{
     background: #9295aa;
