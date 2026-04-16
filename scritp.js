@@ -1,18 +1,14 @@
-let edad = 30;
-const esMayorEdad = true;
-const nombre = "Emily Torres"
-const precio = 99.99;
-var marca = "Dell";
-console.log(nombre,precio,edad)
-edad += 5;
-console.log(edad);
-console.log("suma: ", 5+5);
-if(edad >= 18){
-    console.log("Mayor de edad");
-}else{
-    console.log("Menor de edad");
-}
-const frutas = ["manzana","pera","naranja","fresa"];
-frutas.map((frutas)=>{
-    console.log(frutas);
+const nombre = document.getElementById("nombre");
+const correo = document.getElementById("correo");
+const mensaje = document.getElementById("mensaje");
+/*document.getElementById("fomulario-contacto").addEventListener("click",function(e){console.log("Hola, hicieron click en el formulario");
+});*/
+document.getElementById("fomulario-contacto").addEventListener("submit",function(e){e.preventDefault();console.log("escucho un evento submit"); console.log(nombre.value); console.log(correo.value);
+    console.log(mensaje.value);
+    Swal.fire({
+  title: "Registro exitoso!",
+  text: "You clicked the button!",
+  icon: "success"
 });
+
+})
