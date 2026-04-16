@@ -7,7 +7,7 @@ document.getElementById("fomulario-contacto").addEventListener("submit",function
     console.log(mensaje.value);
     Swal.fire({
   title: "Registro exitoso!",
-  text: "You clicked the button!",
+  text: "Tus datos de contacto se guardaron con exito!",
   icon: "success"
 });
 
